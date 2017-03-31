@@ -1,0 +1,77 @@
+Measure Mode: wall_time
+Thread ID: 70195142195640
+Fiber ID: 70195146508720
+Total: 0.000117
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name
+ 16.12      0.000     0.000     0.000     0.000        1   Global#[No method]
+  8.57      0.000     0.000     0.000     0.000        5   <Module::Transproc::HashTransformations>#map_value
+  6.53      0.000     0.000     0.000     0.000        7   Class#new
+  6.12      0.000     0.000     0.000     0.000        5   Hash#initialize_copy
+  5.92      0.000     0.000     0.000     0.000        6   Method#call
+  5.31      0.000     0.000     0.000     0.000        6   Transproc::Function#call
+  5.10      0.000     0.000     0.000     0.000        1   Hash#each_pair
+  5.10      0.000     0.000     0.000     0.000        5   Kernel#initialize_dup
+  4.08      0.000     0.000     0.000     0.000        5   Transproc::Composite#initialize
+  3.47      0.000     0.000     0.000     0.000        8   Fixnum#to_s
+  2.65      0.000     0.000     0.000     0.000        1   Array#each
+  2.65      0.000     0.000     0.000     0.000        1   Transproc::Transformer::ClassInterface#transproc
+  2.65      0.000     0.000     0.000     0.000        5   Kernel#class
+  2.65      0.000     0.000     0.000     0.000        1   Transproc::Transformer#call
+  2.65      0.000     0.000     0.000     0.000        5  *Transproc::Composite#call
+  1.84      0.000     0.000     0.000     0.000        1   OpenStruct#initialize
+  1.84      0.000     0.000     0.000     0.000        1   Transproc::Function#compose
+  1.63      0.000     0.000     0.000     0.000        4   Transproc::Composite#compose
+  1.63      0.000     0.000     0.000     0.000        1   Transproc::Transformer::ClassInterface#transformations
+  1.63      0.000     0.000     0.000     0.000        1   <Module::Transproc::ClassTransformations>#constructor_inject
+  1.63      0.000     0.000     0.000     0.000        5   Hash#merge
+  1.63      0.000     0.000     0.000     0.000        1   Array#map
+  1.02      0.000     0.000     0.000     0.000        1   BasicObject#initialize
+  0.82      0.000     0.000     0.000     0.000        1   Enumerable#reduce
+  0.82      0.000     0.000     0.000     0.000        6   Symbol#to_sym
+
+* indicates recursively called methods
+Measure Mode: wall_time
+Thread ID: 70195142195640
+Fiber ID: 70195146508720
+Total: 0.000067
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name
+ 15.96      0.000     0.000     0.000     0.000        1   Hash#each
+  9.57      0.000     0.000     0.000     0.000        1   Global#[No method]
+  9.22      0.000     0.000     0.000     0.000        1   Hash#each_pair
+  7.09      0.000     0.000     0.000     0.000        3   Class#new
+  6.03      0.000     0.000     0.000     0.000        1   Transproc::Composite#call
+  4.61      0.000     0.000     0.000     0.000        1   Enumerable#each_with_object
+  4.61      0.000     0.000     0.000     0.000        1   Array#map
+  4.61      0.000     0.000     0.000     0.000        1   <Module::Operations>#map_from_keys
+  4.61      0.000     0.000     0.000     0.000        6   Hash#key?
+  3.19      0.000     0.000     0.000     0.000        1   Transproc::Function#compose
+  3.19      0.000     0.000     0.000     0.000        2   Method#call
+  3.19      0.000     0.000     0.000     0.000        1   Transproc::Transformer::ClassInterface#transformations
+  2.84      0.000     0.000     0.000     0.000        1   <Module::Transproc::ClassTransformations>#constructor_inject
+  2.84      0.000     0.000     0.000     0.000        8   Fixnum#to_s
+  2.84      0.000     0.000     0.000     0.000        1   Transproc::Transformer::ClassInterface#transproc
+  2.84      0.000     0.000     0.000     0.000        1   Transproc::Transformer#call
+  2.84      0.000     0.000     0.000     0.000        2   Transproc::Function#call
+  1.42      0.000     0.000     0.000     0.000        1   OpenStruct#initialize
+  1.42      0.000     0.000     0.000     0.000        1   BasicObject#initialize
+  1.42      0.000     0.000     0.000     0.000        1   Kernel#class
+  1.42      0.000     0.000     0.000     0.000        1   Enumerable#reduce
+  1.42      0.000     0.000     0.000     0.000        1   Transproc::Composite#initialize
+  1.42      0.000     0.000     0.000     0.000        1   Array#each
+  1.42      0.000     0.000     0.000     0.000        6   Symbol#to_sym
+
+* indicates recursively called methods
+Rehearsal ----------------------------------------------------
+transproc:         0.190000   0.000000   0.190000 (  0.194080)
+my transproc:      0.080000   0.000000   0.080000 (  0.082163)
+plain transform:   0.090000   0.000000   0.090000 (  0.086497)
+------------------------------------------- total: 0.360000sec
+
+                       user     system      total        real
+transproc:         0.190000   0.010000   0.200000 (  0.184590)
+my transproc:      0.080000   0.000000   0.080000 (  0.078559)
+plain transform:   0.070000   0.000000   0.070000 (  0.074446)

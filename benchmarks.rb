@@ -81,7 +81,3 @@ Benchmark.bmbm(2) do |x|
   x.report('my transproc:') { 10000.times do; MyTransform.new.call(data); end }
   x.report('plain transform:') { 10000.times do; PlainTransform.new.call(data); end }
 end
-
-puts Transform.new.call(data)
-puts MyTransform.new.call(data)
-puts PlainTransform.new.call(data)
